@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo | Cross-Border Operations</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1A73E8; /* Google Blue - Leadership & Trust */
+            --primary-dark: #1557b0;
+            --bg-color: #ffffff;
+            --bg-alt: #f8f9fa; /* Light Gray for sections */
+            --text-main: #202124;
+            --text-muted: #5f6368;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 100px 0;
+            overflow: hidden;
+        }
+
+        .bg-alt {
+            background-color: var(--bg-alt);
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+        }
+
+        h1 { font-size: 3rem; line-height: 1.2; }
+        h2 { font-size: 2.25rem; }
+        
+        p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+
+        /* Buttons (CTAs) */
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 6px rgba(26, 115, 232, 0.2);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(26, 115, 232, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(26, 115, 232, 0.05);
+            transform: translateY(-2px);
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        /* Hero Section */
+        .hero-img {
+            width: 100%;
+            max-width: 450px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Book Section */
+        .book-wrapper {
+            background: white;
+            padding: 48px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .book-subtitle {
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .book-one-liner {
+            font-size: 1.35rem;
+            font-weight: 400;
+            color: var(--text-main);
+            font-style: italic;
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin-bottom: 32px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; gap: 40px; }
+            .hero-text { order: 2; text-align: center; }
+            .hero-img-col { order: 1; }
+            h1 { font-size: 2.5rem; }
+            .btn-group { justify-content: center; }
+            .book-wrapper { padding: 32px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="bg-alt">
+        <div class="container grid-2">
+            <div class="hero-text fade-up">
+                <h1>Bridging Strategy and Global Execution</h1>
+                <p>"Hugo has spent the last 15+ years in the trenches of global service delivery. Operating across Europe, Asia, and the Middle East, his focus has always been straightforward: building frameworks that help international teams deliver better, keeping complex projects on track, and ensuring multi-region operations scale without losing control. He brings a practical, hands-on perspective to the everyday realities of cross-border governance and enterprise delivery."</p>
+                <a href="URL_DO_TEU_LINKEDIN_AQUI" target="_blank" class="btn btn-primary">Connect on LinkedIn</a>
+            </div>
+            <div class="hero-img-col fade-up" style="transition-delay: 0.2s;">
+                <!-- IMAGE PLACEHOLDER: Mudar o src para a pasta do repositório -->
+                <img src="assets/images/profile.jpg" alt="Hugo" class="hero-img" onerror="this.src='https://placehold.co/600x600/e2e8f0/475569?text=Profile+Image'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book">
+        <div class="container">
+            <div class="book-wrapper fade-up">
+                <span class="book-subtitle">Just Released</span>
+                <h2>Cross-Border Operations:<br>Scaling & Governing Multi-Region Enterprise Delivery</h2>
+                
+                <div class="book-one-liner">
+                    "The definitive blueprint for transforming global expansion into a cohesive operational engine—eliminating cross-border friction to scale enterprise value seamlessly."
+                </div>
+
+                <p>Unlock the exact playbook for global expansion and learn how to lead multi-region technology operations from someone who managed them on the front lines: from scaling mobile operations in Southeast Asia to rebuilding enterprise e-commerce platforms in Eastern Europe. This book is your raw, no-fluff guide to protecting project margins across multiple currencies, implementing zero-failure delivery governance, and scaling high-performing international teams without sacrificing quality.</p>
+                
+                <p>Packed with battle-tested frameworks like the 7-step account recovery process and country selection matrix, it delivers the practical tactics you need to turn cross-border operational friction into your greatest strategic advantage.</p>
+
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Buy Signed Physical Copy</a>
+                    <a href="URL_DA_AMAZON_AQUI" target="_blank" class="btn btn-outline">Get PDF on Amazon KDP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-alt" style="text-align: center;">
+        <div class="container fade-up">
+            <h2>Let's Talk Operations</h2>
+            <p>Have questions about global scale, governance, or the book? Reach out directly.</p>
+            <button id="contact-btn" class="btn btn-primary">Send an Email</button>
+        </div>
+    </section>
+
+    <!-- Scripts for Animations and Anti-Spam Email -->
+    <script>
+        // Intersection Observer for scroll animations (Parallax/Fade-up feel)
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Anti-Spam Email Logic
+        document.getElementById('contact-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Construir o email de forma separada para os bots não lerem o texto no HTML
+            const user = 'xxx';
+            const domain = 'yyy.pt';
+            window.location.href = 'mailto:' + user + '@' + domain;
+        });
+    </script>
+</body>
+</html>
