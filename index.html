@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hugo Abreu | Cross-Border Delivery</title>
+    <meta name="description" content="Hugo Abreu leads cross-border delivery and operations across Europe, Asia and the Middle East.">
+    <!-- Versão da meta description com o livro (descomentar quando o livro for lançado):
     <meta name="description" content="Hugo Abreu leads cross-border delivery and operations across Europe, Asia and the Middle East. Author of Cross-Border Operational Excellence, in preparation.">
+    -->
     <link rel="canonical" href="https://hugoabr.eu/">
-    <meta name="theme-color" content="#1F5F8B">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F5F8B'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#1a73e8">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%231a73e8'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts: Plus Jakarta Sans (Google Sans alternative) & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Open Graph / WhatsApp preview -->
     <meta property="og:title" content="Hugo Abreu | Cross-Border Delivery">
+    <meta property="og:description" content="Cross-border delivery and operations across Europe, Asia and the Middle East.">
+    <!-- Versão do Open Graph com o livro (descomentar quando aplicável):
     <meta property="og:description" content="Cross-border delivery and operations across Europe, Asia and the Middle East. Book in preparation.">
+    -->
     <meta property="og:image" content="https://hugoabr.eu/assets/images/thumbnail.jpg">
     <meta property="og:image:alt" content="Hugo Abreu">
     <meta property="og:url" content="https://hugoabr.eu/">
@@ -41,26 +52,48 @@
 
     <style>
         :root {
-            --paper: #F6F7F5;
-            --ink: #14202B;
-            --muted: #4E5B66;
-            --line: #D9DFE3;
-            --accent: #1F5F8B;
-            --accent-strong: #174A6D;
-            --on-accent: #FFFFFF;
-            --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-            --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            /* Google Material Design 3 - Light Palette */
+            --bg: #ffffff;
+            --surface: #f8f9fa;
+            --surface-variant: #f1f3f4;
+            --ink: #202124;
+            --muted: #5f6368;
+            --line: #dadce0;
+            --accent: #1a73e8;
+            --accent-hover: #1557b0;
+            --accent-container: #e8f0fe;
+            --on-accent-container: #1967d2;
+            --on-accent: #ffffff;
+            --success: #1e8e3e;
+            --success-bg: #e6f4ea;
+            --shadow-sm: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+            --shadow-md: 0 4px 8px 3px rgba(60, 64, 67, 0.15), 0 1px 3px rgba(60, 64, 67, 0.3);
+            --radius-sm: 12px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-pill: 9999px;
+            --display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --sans: "Inter", Roboto, system-ui, -apple-system, sans-serif;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --paper: #0F161C;
-                --ink: #E8EDF0;
-                --muted: #A3B0BA;
-                --line: #26333D;
-                --accent: #7DB7E0;
-                --accent-strong: #A5CDEA;
-                --on-accent: #0F161C;
+                /* Google Material Design 3 - Dark Palette */
+                --bg: #131314;
+                --surface: #1e1f20;
+                --surface-variant: #282a2c;
+                --ink: #e3e3e3;
+                --muted: #9aa0a6;
+                --line: #3c4043;
+                --accent: #8ab4f8;
+                --accent-hover: #aecbfa;
+                --accent-container: #004a77;
+                --on-accent-container: #c2e7ff;
+                --on-accent: #062e6f;
+                --success: #81c995;
+                --success-bg: rgba(129, 201, 149, 0.15);
+                --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.6);
+                --shadow-md: 0 4px 8px 3px rgba(0, 0, 0, 0.5);
             }
         }
 
@@ -71,48 +104,58 @@
             html { scroll-behavior: smooth; }
         }
 
-        html { scroll-padding-top: 72px; }
+        html { scroll-padding-top: 80px; }
 
         body {
             font-family: var(--sans);
             color: var(--ink);
-            background: var(--paper);
+            background: var(--bg);
             line-height: 1.65;
             font-size: 1.0625rem;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         img { max-width: 100%; display: block; }
 
-        a { color: var(--accent); text-underline-offset: 3px; }
-        a:hover { color: var(--accent-strong); }
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s ease, background-color 0.2s ease; }
+        a:hover { color: var(--accent-hover); }
 
         :focus-visible {
-            outline: 3px solid var(--accent);
+            outline: 2px solid var(--accent);
             outline-offset: 3px;
-            border-radius: 2px;
+            border-radius: 4px;
         }
 
         .skip {
             position: absolute;
             left: 16px;
             top: -64px;
-            padding: 10px 16px;
+            padding: 10px 20px;
             background: var(--accent);
             color: var(--on-accent);
-            border-radius: 4px;
-            z-index: 10;
+            font-weight: 500;
+            border-radius: var(--radius-pill);
+            z-index: 100;
         }
         .skip:focus { top: 12px; color: var(--on-accent); }
 
         .wrap {
-            max-width: 1080px;
+            max-width: 1120px;
             margin: 0 auto;
             padding: 0 24px;
         }
 
-        /* Header */
-        .site-header { border-bottom: 1px solid var(--line); }
+        /* Header - Google Sticky Top App Bar */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: color-mix(in srgb, var(--bg) 85%, transparent);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--line);
+        }
         .site-header .wrap {
             display: flex;
             align-items: center;
@@ -122,141 +165,273 @@
             min-height: 64px;
         }
         .brand {
-            font-family: var(--serif);
-            font-weight: 700;
-            font-size: 1.125rem;
+            font-family: var(--display);
+            font-weight: 600;
+            font-size: 1.25rem;
             color: var(--ink);
-            text-decoration: none;
+            letter-spacing: -0.02em;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .brand::before {
+            content: "H";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: var(--on-accent);
+            font-size: 0.95rem;
+            font-weight: 700;
         }
         .brand:hover { color: var(--ink); }
-        .nav { display: flex; gap: 24px; }
-        .nav a { color: var(--muted); text-decoration: none; font-size: 0.975rem; padding: 8px 0; }
-        .nav a:hover { color: var(--ink); text-decoration: underline; }
 
-        /* Type */
-        h1, h2, h3 { font-family: var(--serif); line-height: 1.15; letter-spacing: -0.01em; }
-        h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 700; margin-bottom: 20px; }
-        h2 { font-size: clamp(1.75rem, 3.4vw, 2.375rem); font-weight: 700; margin-bottom: 12px; }
-        h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 16px; }
-        p { max-width: 62ch; }
+        .nav { display: flex; gap: 8px; }
+        .nav a {
+            color: var(--muted);
+            font-family: var(--display);
+            font-weight: 500;
+            font-size: 0.9375rem;
+            padding: 8px 16px;
+            border-radius: var(--radius-pill);
+        }
+        .nav a:hover {
+            color: var(--ink);
+            background: var(--surface-variant);
+        }
+
+        /* Typography - Google Material Scale */
+        h1, h2, h3 {
+            font-family: var(--display);
+            line-height: 1.18;
+            letter-spacing: -0.025em;
+            color: var(--ink);
+        }
+        h1 { font-size: clamp(2.5rem, 5.5vw, 3.75rem); font-weight: 700; margin-bottom: 20px; }
+        h2 { font-size: clamp(1.85rem, 3.5vw, 2.5rem); font-weight: 600; margin-bottom: 14px; }
+        h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 16px; }
+        p { max-width: 62ch; color: var(--muted); }
         p + p { margin-top: 1em; }
 
-        /* Buttons */
+        /* Buttons - Material 3 Pill Buttons */
         .btn {
-            display: inline-block;
-            padding: 12px 22px;
-            font: inherit;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            font-family: var(--display);
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.9375rem;
             line-height: 1.3;
             text-decoration: none;
-            border-radius: 4px;
-            border: 2px solid var(--accent);
+            border-radius: var(--radius-pill);
+            border: 1px solid transparent;
             cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
         }
-        .btn-primary { background: var(--accent); color: var(--on-accent); }
-        .btn-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
-        .btn-quiet { background: transparent; color: var(--accent); }
-        .btn-quiet:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--accent-strong); }
-        .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+        .btn-primary {
+            background: var(--accent);
+            color: var(--on-accent);
+        }
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            color: var(--on-accent);
+            box-shadow: var(--shadow-sm);
+        }
+        .btn-quiet {
+            background: transparent;
+            color: var(--accent);
+            border-color: var(--line);
+        }
+        .btn-quiet:hover {
+            background: var(--accent-container);
+            color: var(--on-accent-container);
+            border-color: transparent;
+        }
+        .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 
         /* Hero */
-        .hero { padding: 72px 0 56px; }
+        .hero { padding: 80px 0 64px; }
         .hero-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+            grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
             gap: 64px;
             align-items: center;
         }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--display);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--on-accent-container);
+            background: var(--accent-container);
+            padding: 6px 14px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 20px;
+        }
         .hero-lead {
-            font-family: var(--serif);
-            font-size: clamp(1.25rem, 2.4vw, 1.5rem);
-            line-height: 1.4;
+            font-family: var(--display);
+            font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+            font-weight: 500;
+            line-height: 1.45;
             color: var(--ink);
             margin-bottom: 20px;
         }
-        .hero p { color: var(--muted); }
-        .hero .hero-lead { color: var(--ink); }
+        .portrait {
+            position: relative;
+        }
         .portrait img {
             width: 100%;
             height: auto;
             aspect-ratio: 1 / 1;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--line);
         }
         .hero-grid.no-photo { grid-template-columns: minmax(0, 1fr); }
         .hero-grid.no-photo .portrait { display: none; }
 
-        /* Local time strip */
-        .clocks-wrap { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-        .clocks-wrap .wrap {
+        /* Local time strip - Google Material Surface Card */
+        .clocks-wrap { padding: 16px 0 48px; }
+        .clocks-card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-lg);
+            padding: 24px 32px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 12px 40px;
-            padding-top: 16px;
-            padding-bottom: 16px;
+            justify-content: space-between;
+            gap: 20px 40px;
         }
-        .clocks-caption { color: var(--muted); font-size: 0.95rem; max-width: none; }
-        .clocks { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 32px; }
-        .clocks li { display: flex; align-items: baseline; gap: 10px; }
-        .clocks .city { color: var(--muted); font-size: 0.95rem; }
+        .clocks-caption {
+            color: var(--muted);
+            font-size: 0.9375rem;
+            font-weight: 500;
+            max-width: none;
+        }
+        .clocks {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+        }
+        .clocks li {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--bg);
+            border: 1px solid var(--line);
+            padding: 8px 16px;
+            border-radius: var(--radius-pill);
+        }
+        .clocks .city {
+            color: var(--muted);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
         .clocks time {
-            font-family: var(--serif);
-            font-weight: 700;
-            font-size: 1.375rem;
+            font-family: var(--display);
+            font-weight: 600;
+            font-size: 1.0625rem;
+            color: var(--ink);
             font-variant-numeric: tabular-nums;
         }
         .clocks .dot {
-            width: 9px; height: 9px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
-            border: 2px solid var(--muted);
-            align-self: center;
+            background: var(--line);
+            transition: background-color 0.3s ease;
         }
-        .clocks li.open .dot { background: var(--accent); border-color: var(--accent); }
+        .clocks li.open {
+            border-color: color-mix(in srgb, var(--success) 40%, var(--line));
+        }
+        .clocks li.open .dot {
+            background: var(--success);
+            box-shadow: 0 0 0 4px var(--success-bg);
+        }
         .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-        /* Book */
-        .book { padding: 88px 0; }
+        /* Book Section (Styles ready for when uncommented) */
+        .book { padding: 80px 0; }
+        .book-card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-lg);
+            padding: 48px;
+        }
         .book-grid {
             display: grid;
             grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-            gap: 64px;
+            gap: 56px;
             align-items: start;
         }
         .status {
             display: inline-block;
-            font-size: 0.9rem;
+            font-family: var(--display);
+            font-size: 0.8125rem;
             font-weight: 600;
-            color: var(--accent);
-            border: 1px solid var(--accent);
-            border-radius: 999px;
-            padding: 2px 12px;
-            margin-bottom: 20px;
+            color: var(--on-accent-container);
+            background: var(--accent-container);
+            border-radius: var(--radius-pill);
+            padding: 4px 12px;
+            margin-bottom: 16px;
         }
         .subtitle {
-            font-family: var(--serif);
+            font-family: var(--display);
             font-size: 1.25rem;
             line-height: 1.4;
             color: var(--muted);
         }
         .book-intro p { color: var(--ink); }
-        .book-intro h3 { margin-top: 40px; }
-        .covers { list-style: none; padding: 0; border-top: 1px solid var(--line); max-width: 62ch; }
-        .covers li { padding: 14px 0; border-bottom: 1px solid var(--line); }
+        .book-intro h3 { margin-top: 36px; }
+        .covers {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 12px;
+            max-width: 62ch;
+        }
+        .covers li {
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-sm);
+            padding: 14px 18px;
+            color: var(--ink);
+            font-size: 0.975rem;
+        }
 
-        /* Contact */
-        .contact { padding: 72px 0 96px; border-top: 1px solid var(--line); }
-        .contact p { color: var(--muted); }
+        /* Contact Section */
+        .contact { padding: 48px 0 88px; }
+        .contact-card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-lg);
+            padding: 48px;
+        }
 
-        footer { padding: 24px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+        footer {
+            padding: 32px 0 48px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
 
         @media (max-width: 800px) {
-            .hero { padding: 40px 0 40px; }
+            .hero { padding: 40px 0 36px; }
             .hero-grid, .book-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
-            .portrait { order: -1; max-width: 320px; }
-            .book { padding: 56px 0; }
-            .contact { padding: 48px 0 64px; }
+            .portrait { order: -1; max-width: 280px; }
+            .clocks-card, .book-card, .contact-card { padding: 28px 24px; }
+            .contact { padding: 24px 0 64px; }
         }
     </style>
 </head>
@@ -268,7 +443,9 @@
             <a class="brand" href="#top">Hugo Abreu</a>
             <nav class="nav" aria-label="Main">
                 <a href="#about">About</a>
+                <!-- Link do livro comentado:
                 <a href="#book">Book</a>
+                -->
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -280,12 +457,16 @@
             <div class="wrap">
                 <div class="hero-grid" id="hero-grid">
                     <div>
+                        <span class="eyebrow">Cross-Border Delivery &amp; Operations</span>
                         <h1>Hugo Abreu</h1>
                         <p class="hero-lead">I help international teams deliver across borders, and keep multi-region operations under control as they grow.</p>
                         <p>I have spent more than fifteen years in cross-border delivery and operations, working across Europe, Asia and the Middle East. My focus is practical: frameworks that help teams deliver better, keep complex projects on track and scale without losing control.</p>
                         <div class="actions">
                             <a class="btn btn-primary" href="https://www.linkedin.com/in/hugoabreu7" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-                            <a class="btn btn-quiet" href="#book">About the X</a>
+                            <a class="btn btn-quiet" href="#contact">Get in touch</a>
+                            <!-- Botão do livro comentado:
+                            <a class="btn btn-quiet" href="#book">About the book</a>
+                            -->
                         </div>
                     </div>
                     <figure class="portrait">
@@ -299,60 +480,67 @@
         <!-- Shown only when JavaScript runs -->
         <div class="clocks-wrap" id="clocks-wrap" hidden>
             <div class="wrap">
-                <p class="clocks-caption">Local time in three places I have worked from</p>
-                <ul class="clocks" id="clocks">
-                    <li data-zone="Europe/Lisbon"><span class="city">Lisbon</span><time>--:--</time><span class="dot" aria-hidden="true"></span><span class="sr"></span></li>
-                    <li data-zone="Asia/Qatar"><span class="city">Doha</span><time>--:--</time><span class="dot" aria-hidden="true"></span><span class="sr"></span></li>
-                    <li data-zone="Asia/Kuala_Lumpur"><span class="city">Kuala Lumpur</span><time>--:--</time><span class="dot" aria-hidden="true"></span><span class="sr"></span></li>
-                </ul>
-            </div>
-        </div>
-
-        <section class="book" id="book">
-            <div class="wrap book-grid">
-                <div>
-                    <span class="status">In preparation</span>
-                    <h2>Cross-Border Operational Excellence</h2>
-                    <p class="subtitle">Scaling &amp; Governing Multi-Region Delivery</p>
-                    <div class="actions">
-                        <a class="btn btn-primary" href="#contact" data-mail data-subject="Notify me about the book">Email me to be notified</a>
-                    </div>
-                    <!-- When the book is out, add the purchase buttons here, for example:
-                    <a class="btn btn-primary" href="PURCHASE_URL" target="_blank" rel="noopener noreferrer">Get the book</a>
-                    -->
-                </div>
-
-                <div class="book-intro">
-                    <p>When a timeline is slipping and you are in a room halfway across the world, theory rarely helps. This book is what I wish I had been handed before my first flight: a practical field manual for people who run delivery across borders.</p>
-                    <p>It is written for delivery managers, engineering leads and founders scaling international teams. It draws on real projects, from opening markets to recovering troubled accounts, and every chapter ends with a short list of checks you can use the next day.</p>
-
-                    <h3>What it covers</h3>
-                    <ul class="covers">
-                        <li>Why local pushback is useful information and not rebellion.</li>
-                        <li>Going from a blank map to a working local office, with a weighted country selection matrix and turnkey partners.</li>
-                        <li>Practical P&amp;L governance, and a seven-step process for recovering a failing account.</li>
-                        <li>Managing expectations and communicating early, so surprises stay small.</li>
-                        <li>Keeping client contracts simple while putting safeguards in place before you need them.</li>
-                        <li>Scaling headcount without losing quality, starting from a shared definition of success with the client.</li>
-                        <li>Mapping stakeholders and aligning technical teams with business owners around clear priorities.</li>
-                        <li>Adapting to local working rhythms instead of forcing your defaults.</li>
-                        <li>Handling a crisis with quiet documentation and steady communication routines, not last-minute heroics.</li>
-                        <li>Turning a vendor relationship into a long-term partnership by working as part of the client team.</li>
+                <div class="clocks-card">
+                    <p class="clocks-caption">Local time in three places I have worked from</p>
+                    <ul class="clocks" id="clocks">
+                        <li data-zone="Europe/Lisbon"><span class="dot" aria-hidden="true"></span><span class="city">Lisbon</span><time>--:--</time><span class="sr"></span></li>
+                        <li data-zone="Asia/Qatar"><span class="dot" aria-hidden="true"></span><span class="city">Doha</span><time>--:--</time><span class="sr"></span></li>
+                        <li data-zone="Asia/Kuala_Lumpur"><span class="dot" aria-hidden="true"></span><span class="city">Kuala Lumpur</span><time>--:--</time><span class="sr"></span></li>
                     </ul>
                 </div>
             </div>
+        </div>
+
+        <!-- SECÇÃO DO LIVRO COMENTADA (não visível no site)
+        <section class="book" id="book">
+            <div class="wrap">
+                <div class="book-card book-grid">
+                    <div>
+                        <span class="status">In preparation</span>
+                        <h2>Cross-Border Operational Excellence</h2>
+                        <p class="subtitle">Scaling &amp; Governing Multi-Region Delivery</p>
+                        <div class="actions">
+                            <a class="btn btn-primary" href="#contact" data-mail data-subject="Notify me about the book">Email me to be notified</a>
+                        </div>
+                    </div>
+
+                    <div class="book-intro">
+                        <p>When a timeline is slipping and you are in a room halfway across the world, theory rarely helps. This book is what I wish I had been handed before my first flight: a practical field manual for people who run delivery across borders.</p>
+                        <p>It is written for delivery managers, engineering leads and founders scaling international teams. It draws on real projects, from opening markets to recovering troubled accounts, and every chapter ends with a short list of checks you can use the next day.</p>
+
+                        <h3>What it covers</h3>
+                        <ul class="covers">
+                            <li>Why local pushback is useful information and not rebellion.</li>
+                            <li>Going from a blank map to a working local office, with a weighted country selection matrix and turnkey partners.</li>
+                            <li>Practical P&amp;L governance, and a seven-step process for recovering a failing account.</li>
+                            <li>Managing expectations and communicating early, so surprises stay small.</li>
+                            <li>Keeping client contracts simple while putting safeguards in place before you need them.</li>
+                            <li>Scaling headcount without losing quality, starting from a shared definition of success with the client.</li>
+                            <li>Mapping stakeholders and aligning technical teams with business owners around clear priorities.</li>
+                            <li>Adapting to local working rhythms instead of forcing your defaults.</li>
+                            <li>Handling a crisis with quiet documentation and steady communication routines, not last-minute heroics.</li>
+                            <li>Turning a vendor relationship into a long-term partnership by working as part of the client team.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-        
+        -->
+
         <section class="contact" id="contact">
             <div class="wrap">
-                <h2>Contact</h2>
-                <p>Questions about cross-border delivery or about the book? Send me an email.</p>
-                <div class="actions">
-                        
-                    <a class="btn btn-primary" href="#contact" data-mail>Send an email</a>
-                    <a class="btn btn-quiet" href="https://www.linkedin.com/in/hugoabreu7" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <div class="contact-card">
+                    <h2>Contact</h2>
+                    <p>Questions about cross-border delivery? Send me an email.</p>
+                    <!-- Texto alternativo com menção ao livro (comentado):
+                    <p>Questions about cross-border delivery or about the book? Send me an email.</p>
+                    -->
+                    <div class="actions">
+                        <a class="btn btn-primary" href="#contact" data-mail>Send an email</a>
+                        <a class="btn btn-quiet" href="https://www.linkedin.com/in/hugoabreu7" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                    <noscript><p style="margin-top:16px">The email link needs JavaScript. You can reach me on LinkedIn instead.</p></noscript>
                 </div>
-                <noscript><p style="margin-top:16px">The email link needs JavaScript. You can reach me on LinkedIn instead.</p></noscript>
             </div>
         </section>
     </main>
@@ -407,3 +595,4 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
+</html>
