@@ -3,28 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo Abreu | Cross-Border Delivery</title>
-    <meta name="description" content="Hugo Abreu leads cross-border delivery and operations across Europe, Asia and the Middle East.">
-    <!-- Versão da meta description com o livro (descomentar quando o livro for lançado):
-    <meta name="description" content="Hugo Abreu leads cross-border delivery and operations across Europe, Asia and the Middle East. Author of Cross-Border Operational Excellence, in preparation.">
-    -->
+    <title>Hugo Abreu | Delivering Across Borders</title>
+    <meta name="description" content="Hugo Abreu leads cross-border delivery operations across Europe, Asia, and the Middle East. Author of Delivering Across Borders, a practical guide to building and running international delivery teams.">
     <link rel="canonical" href="https://hugoabr.eu/">
     <meta name="theme-color" content="#1a73e8">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%231a73e8'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
 
-    <!-- Google Fonts: Plus Jakarta Sans (Google Sans alternative) & Inter -->
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Open Graph / WhatsApp preview -->
-    <meta property="og:title" content="Hugo Abreu | Cross-Border Delivery">
-    <meta property="og:description" content="Cross-border delivery and operations across Europe, Asia and the Middle East.">
-    <!-- Versão do Open Graph com o livro (descomentar quando aplicável):
-    <meta property="og:description" content="Cross-border delivery and operations across Europe, Asia and the Middle East. Book in preparation.">
-    -->
+    <!-- Open Graph / Social preview -->
+    <meta property="og:title" content="Hugo Abreu | Delivering Across Borders">
+    <meta property="og:description" content="A practical guide to building and running delivery teams in several countries, based on 15 years across Europe, Asia, and the Middle East.">
     <meta property="og:image" content="https://hugoabr.eu/assets/images/thumbnail.jpg">
-    <meta property="og:image:alt" content="Hugo Abreu">
+    <meta property="og:image:alt" content="Hugo Abreu, Author of Delivering Across Borders">
     <meta property="og:url" content="https://hugoabr.eu/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -36,9 +30,28 @@
         "name": "Hugo Abreu",
         "url": "https://hugoabr.eu/",
         "sameAs": ["https://www.linkedin.com/in/hugoabreu7"],
-        "description": "Cross-border delivery and operations leader across Europe, Asia and the Middle East."
+        "description": "Cross-border delivery and operations leader across Europe, Asia, and the Middle East. Author of Delivering Across Borders."
     }
     </script>
+
+    <!-- Schema do livro (descomentar e preencher ISBN/URL quando o livro for lançado na Amazon):
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Delivering Across Borders: A Practical Guide to Building and Running Delivery Teams in Several Countries",
+        "author": {
+            "@type": "Person",
+            "name": "Hugo Abreu",
+            "url": "https://hugoabr.eu/"
+        },
+        "inLanguage": "en",
+        "bookFormat": ["https://schema.org/Paperback", "https://schema.org/EBook"],
+        "isbn": "SEU-ISBN-AQUI",
+        "url": "https://hugoabr.eu/#book"
+    }
+    </script>
+    -->
 
     <!-- Google tag (gtag.js)
          Note: in the EU this normally needs visitor consent before it loads. -->
@@ -52,7 +65,7 @@
 
     <style>
         :root {
-            /* Google Material Design 3 - Light Palette */
+            /* Material Design 3 - Light Palette */
             --bg: #ffffff;
             --surface: #f8f9fa;
             --surface-variant: #f1f3f4;
@@ -66,8 +79,10 @@
             --on-accent: #ffffff;
             --success: #1e8e3e;
             --success-bg: #e6f4ea;
-            --shadow-sm: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-            --shadow-md: 0 4px 8px 3px rgba(60, 64, 67, 0.15), 0 1px 3px rgba(60, 64, 67, 0.3);
+            --cover-bg: #162436;
+            --cover-accent: #4d90fe;
+            --shadow-sm: 0 1px 2px 0 rgba(60, 64, 67, 0.25), 0 1px 3px 1px rgba(60, 64, 67, 0.12);
+            --shadow-md: 0 10px 28px -6px rgba(22, 36, 54, 0.24), 0 4px 10px -2px rgba(22, 36, 54, 0.14);
             --radius-sm: 12px;
             --radius-md: 16px;
             --radius-lg: 24px;
@@ -78,7 +93,7 @@
 
         @media (prefers-color-scheme: dark) {
             :root {
-                /* Google Material Design 3 - Dark Palette */
+                /* Material Design 3 - Dark Palette */
                 --bg: #131314;
                 --surface: #1e1f20;
                 --surface-variant: #282a2c;
@@ -92,19 +107,21 @@
                 --on-accent: #062e6f;
                 --success: #81c995;
                 --success-bg: rgba(129, 201, 149, 0.15);
+                --cover-bg: #101a28;
+                --cover-accent: #8ab4f8;
                 --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-                --shadow-md: 0 4px 8px 3px rgba(0, 0, 0, 0.5);
+                --shadow-md: 0 12px 32px -4px rgba(0, 0, 0, 0.65);
             }
         }
 
         *, *::before, *::after { box-sizing: border-box; }
-        * { margin: 0; }
+        body, h1, h2, h3, h4, p, ul, ol, figure { margin: 0; }
 
         @media (prefers-reduced-motion: no-preference) {
             html { scroll-behavior: smooth; }
         }
 
-        html { scroll-padding-top: 80px; }
+        html { scroll-padding-top: 84px; }
 
         body {
             font-family: var(--sans);
@@ -146,12 +163,12 @@
             padding: 0 24px;
         }
 
-        /* Header - Google Sticky Top App Bar */
+        /* Header */
         .site-header {
             position: sticky;
             top: 0;
             z-index: 50;
-            background: color-mix(in srgb, var(--bg) 85%, transparent);
+            background: color-mix(in srgb, var(--bg) 88%, transparent);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--line);
@@ -167,7 +184,7 @@
         .brand {
             font-family: var(--display);
             font-weight: 600;
-            font-size: 1.25rem;
+            font-size: 1.1875rem;
             color: var(--ink);
             letter-spacing: -0.02em;
             display: inline-flex;
@@ -189,13 +206,13 @@
         }
         .brand:hover { color: var(--ink); }
 
-        .nav { display: flex; gap: 8px; }
+        .nav { display: flex; gap: 4px; flex-wrap: wrap; }
         .nav a {
             color: var(--muted);
             font-family: var(--display);
             font-weight: 500;
             font-size: 0.9375rem;
-            padding: 8px 16px;
+            padding: 8px 14px;
             border-radius: var(--radius-pill);
         }
         .nav a:hover {
@@ -203,20 +220,21 @@
             background: var(--surface-variant);
         }
 
-        /* Typography - Google Material Scale */
-        h1, h2, h3 {
+        /* Typography */
+        h1, h2, h3, h4 {
             font-family: var(--display);
             line-height: 1.18;
             letter-spacing: -0.025em;
             color: var(--ink);
         }
-        h1 { font-size: clamp(2.5rem, 5.5vw, 3.75rem); font-weight: 700; margin-bottom: 20px; }
-        h2 { font-size: clamp(1.85rem, 3.5vw, 2.5rem); font-weight: 600; margin-bottom: 14px; }
-        h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 16px; }
+        h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 700; margin-bottom: 18px; }
+        h2 { font-size: clamp(1.85rem, 3.4vw, 2.5rem); font-weight: 700; margin-bottom: 14px; }
+        h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 10px; }
+        h4 { font-size: 1.025rem; font-weight: 600; margin-bottom: 6px; }
         p { max-width: 62ch; color: var(--muted); }
         p + p { margin-top: 1em; }
 
-        /* Buttons - Material 3 Pill Buttons */
+        /* Buttons */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -252,39 +270,38 @@
             color: var(--on-accent-container);
             border-color: transparent;
         }
-        .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+        .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 
-        /* Hero */
-        .hero { padding: 80px 0 64px; }
-        .hero-grid {
-            display: grid;
-            grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
-            gap: 64px;
-            align-items: center;
-        }
         .eyebrow {
             display: inline-flex;
             align-items: center;
             gap: 8px;
             font-family: var(--display);
-            font-size: 0.875rem;
+            font-size: 0.8125rem;
             font-weight: 600;
+            letter-spacing: 0.01em;
             color: var(--on-accent-container);
             background: var(--accent-container);
             padding: 6px 14px;
             border-radius: var(--radius-pill);
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+        }
+
+        /* Hero */
+        .hero { padding: 72px 0 48px; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+            gap: 56px;
+            align-items: center;
         }
         .hero-lead {
             font-family: var(--display);
-            font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+            font-size: clamp(1.2rem, 2.1vw, 1.45rem);
             font-weight: 500;
             line-height: 1.45;
             color: var(--ink);
-            margin-bottom: 20px;
-        }
-        .portrait {
-            position: relative;
+            margin-bottom: 16px;
         }
         .portrait img {
             width: 100%;
@@ -298,22 +315,22 @@
         .hero-grid.no-photo { grid-template-columns: minmax(0, 1fr); }
         .hero-grid.no-photo .portrait { display: none; }
 
-        /* Local time strip - Google Material Surface Card */
-        .clocks-wrap { padding: 16px 0 48px; }
+        /* Clocks Strip */
+        .clocks-wrap { padding: 8px 0 56px; }
         .clocks-card {
             background: var(--surface);
             border: 1px solid var(--line);
             border-radius: var(--radius-lg);
-            padding: 24px 32px;
+            padding: 20px 28px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            gap: 20px 40px;
+            gap: 16px 32px;
         }
         .clocks-caption {
             color: var(--muted);
-            font-size: 0.9375rem;
+            font-size: 0.9rem;
             font-weight: 500;
             max-width: none;
         }
@@ -322,26 +339,26 @@
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 12px 24px;
+            gap: 10px 16px;
         }
         .clocks li {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 9px;
             background: var(--bg);
             border: 1px solid var(--line);
-            padding: 8px 16px;
+            padding: 7px 14px;
             border-radius: var(--radius-pill);
         }
         .clocks .city {
             color: var(--muted);
-            font-size: 0.875rem;
+            font-size: 0.85rem;
             font-weight: 500;
         }
         .clocks time {
             font-family: var(--display);
             font-weight: 600;
-            font-size: 1.0625rem;
+            font-size: 0.975rem;
             color: var(--ink);
             font-variant-numeric: tabular-nums;
         }
@@ -361,77 +378,269 @@
         }
         .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-        /* Book Section (Styles ready for when uncommented) */
-        .book { padding: 80px 0; }
-        .book-card {
+        /* Book Presentation Section */
+        .book-section { padding: 24px 0 72px; }
+        .book-hero-card {
             background: var(--surface);
             border: 1px solid var(--line);
             border-radius: var(--radius-lg);
-            padding: 48px;
+            padding: 52px;
         }
-        .book-grid {
+        .book-top-grid {
             display: grid;
-            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-            gap: 56px;
-            align-items: start;
+            grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+            gap: 52px;
+            align-items: center;
         }
-        .status {
-            display: inline-block;
+
+        /* Book Cover (Real image or automatic CSS typographic fallback) */
+        .book-cover-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        .book-cover-img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px 14px 14px 6px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--line);
+        }
+        .book-cover-fallback {
+            display: none;
+            aspect-ratio: 2 / 3;
+            background: linear-gradient(155deg, var(--cover-bg) 0%, #0d1622 100%);
+            color: #ffffff;
+            border-radius: 6px 14px 14px 6px;
+            padding: 32px 26px 28px 34px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .book-cover-fallback::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 14px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.35));
+        }
+        .book-cover-wrap.use-fallback .book-cover-img { display: none; }
+        .book-cover-wrap.use-fallback .book-cover-fallback { display: flex; }
+
+        .cover-bar {
+            width: 40px;
+            height: 4px;
+            background: var(--cover-accent);
+            border-radius: 2px;
+            margin-bottom: 18px;
+        }
+        .cover-title {
             font-family: var(--display);
-            font-size: 0.8125rem;
+            font-size: 1.7rem;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+        }
+        .cover-subtitle {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            line-height: 1.45;
+            color: rgba(255, 255, 255, 0.78);
+        }
+        .cover-author {
+            font-family: var(--display);
+            font-size: 0.9rem;
             font-weight: 600;
-            color: var(--on-accent-container);
-            background: var(--accent-container);
-            border-radius: var(--radius-pill);
-            padding: 4px 12px;
-            margin-bottom: 16px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.9);
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.16);
         }
-        .subtitle {
+
+        .book-subtitle {
             font-family: var(--display);
-            font-size: 1.25rem;
+            font-size: clamp(1.15rem, 2vw, 1.35rem);
+            font-weight: 500;
             line-height: 1.4;
-            color: var(--muted);
+            color: var(--ink);
+            margin-bottom: 20px;
+            max-width: 52ch;
         }
-        .book-intro p { color: var(--ink); }
-        .book-intro h3 { margin-top: 36px; }
-        .covers {
+        .book-thesis {
+            font-size: 1.05rem;
+            color: var(--ink);
+            font-weight: 500;
+            padding-left: 16px;
+            border-left: 3px solid var(--accent);
+            margin-bottom: 18px;
+        }
+        .spec-pills {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 24px;
+        }
+        .spec-pills li {
+            font-family: var(--display);
+            font-size: 0.825rem;
+            font-weight: 600;
+            color: var(--muted);
+            background: var(--bg);
+            border: 1px solid var(--line);
+            padding: 6px 13px;
+            border-radius: var(--radius-pill);
+        }
+
+        /* Three Pillars Strip */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 40px;
+            padding-top: 36px;
+            border-top: 1px solid var(--line);
+        }
+        .pillar-card {
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-md);
+            padding: 22px 24px;
+        }
+        .pillar-label {
+            font-family: var(--display);
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        .pillar-card p {
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        /* Subsections: Chapters & Audience */
+        .subsection {
+            margin-top: 56px;
+        }
+        .subsection-head {
+            margin-bottom: 24px;
+        }
+        .subsection-head h3 {
+            font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .chapters-grid {
             list-style: none;
             padding: 0;
             display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 12px;
-            max-width: 62ch;
         }
-        .covers li {
-            background: var(--bg);
+        .chapters-grid li {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            background: var(--surface);
             border: 1px solid var(--line);
             border-radius: var(--radius-sm);
-            padding: 14px 18px;
+            padding: 16px 20px;
+            transition: border-color 0.2s ease;
+        }
+        .chapters-grid li:hover {
+            border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+        }
+        .chap-num {
+            font-family: var(--display);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent);
+            font-variant-numeric: tabular-nums;
+            flex-shrink: 0;
+        }
+        .chap-title {
+            font-family: var(--display);
+            font-size: 0.985rem;
+            font-weight: 600;
             color: var(--ink);
-            font-size: 0.975rem;
+            line-height: 1.35;
+        }
+
+        .extras-bar {
+            margin-top: 16px;
+            background: var(--accent-container);
+            color: var(--on-accent-container);
+            border-radius: var(--radius-md);
+            padding: 18px 24px;
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+        .extras-bar strong {
+            font-family: var(--display);
+            font-weight: 700;
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+        .audience-card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-md);
+            padding: 24px 26px;
+        }
+        .audience-card p {
+            font-size: 0.95rem;
+            line-height: 1.55;
         }
 
         /* Contact Section */
-        .contact { padding: 48px 0 88px; }
+        .contact { padding: 16px 0 88px; }
         .contact-card {
             background: var(--surface);
             border: 1px solid var(--line);
             border-radius: var(--radius-lg);
-            padding: 48px;
+            padding: 44px 48px;
         }
 
         footer {
-            padding: 32px 0 48px;
+            padding: 28px 0 44px;
             border-top: 1px solid var(--line);
             color: var(--muted);
             font-size: 0.875rem;
         }
+        footer .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 12px;
+        }
 
-        @media (max-width: 800px) {
-            .hero { padding: 40px 0 36px; }
-            .hero-grid, .book-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
-            .portrait { order: -1; max-width: 280px; }
-            .clocks-card, .book-card, .contact-card { padding: 28px 24px; }
-            .contact { padding: 24px 0 64px; }
+        @media (max-width: 860px) {
+            .hero { padding: 40px 0 32px; }
+            .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+            .portrait { order: -1; max-width: 240px; }
+            .book-hero-card { padding: 32px 24px; }
+            .book-top-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+            .book-cover-wrap { max-width: 230px; }
+            .pillars-grid, .chapters-grid, .audience-grid { grid-template-columns: minmax(0, 1fr); }
+            .clocks-card, .contact-card { padding: 28px 24px; }
+            .contact { padding: 12px 0 64px; }
         }
     </style>
 </head>
@@ -443,15 +652,15 @@
             <a class="brand" href="#top">Hugo Abreu</a>
             <nav class="nav" aria-label="Main">
                 <a href="#about">About</a>
-                <!-- Link do livro comentado:
-                <a href="#book">Book</a>
-                -->
+                <a href="#book">The Book</a>
+                <a href="#chapters">Chapters</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <main id="main">
+        <!-- Hero / Author Positioning -->
         <section class="hero" id="about">
             <a id="top"></a>
             <div class="wrap">
@@ -459,13 +668,13 @@
                     <div>
                         <span class="eyebrow">Cross-Border Delivery &amp; Operations</span>
                         <h1>Hugo Abreu</h1>
-                        <p class="hero-lead">I help international teams deliver across borders, and keep multi-region operations under control as they grow.</p>
-                        <p>I have spent more than fifteen years in cross-border delivery and operations, working across Europe, Asia and the Middle East. My focus is practical: frameworks that help teams deliver better, keep complex projects on track and scale without losing control.</p>
+                        <p class="hero-lead">I build and run software delivery operations across countries, keeping teams aligned as scope, headcount, and complexity grow.</p>
+                        <p>Over fifteen years across Europe, Asia, and the Middle East, I have opened an international office from scratch in Malaysia, led global e-commerce programs, and overseen multi-region delivery teams across Lisbon, Skopje, and Kuala Lumpur. I write and speak about what actually works on the ground when distance, culture, and deadlines collide.</p>
                         <div class="actions">
-                            <a class="btn btn-primary" href="https://www.linkedin.com/in/hugoabreu7" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-                            <a class="btn btn-quiet" href="#contact">Get in touch</a>
-                            <!-- Botão do livro comentado:
-                            <a class="btn btn-quiet" href="#book">About the book</a>
+                            <a class="btn btn-primary" href="#book">Explore the book</a>
+                            <a class="btn btn-quiet" href="https://www.linkedin.com/in/hugoabreu7" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+                            <!-- AMAZON CTA NO HERO (descomentar no lançamento e trocar pelo link Books2Read ou Amazon):
+                            <a class="btn btn-primary" href="https://books2read.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
                             -->
                         </div>
                     </div>
@@ -477,13 +686,14 @@
             </div>
         </section>
 
-        <!-- Shown only when JavaScript runs -->
+        <!-- Local Time Strip (shown only when JS runs) -->
         <div class="clocks-wrap" id="clocks-wrap" hidden>
             <div class="wrap">
                 <div class="clocks-card">
-                    <p class="clocks-caption">Local time in three places I have worked from</p>
+                    <p class="clocks-caption">Local time across the hubs behind my work</p>
                     <ul class="clocks" id="clocks">
                         <li data-zone="Europe/Lisbon"><span class="dot" aria-hidden="true"></span><span class="city">Lisbon</span><time>--:--</time><span class="sr"></span></li>
+                        <li data-zone="Europe/Skopje"><span class="dot" aria-hidden="true"></span><span class="city">Skopje</span><time>--:--</time><span class="sr"></span></li>
                         <li data-zone="Asia/Qatar"><span class="dot" aria-hidden="true"></span><span class="city">Doha</span><time>--:--</time><span class="sr"></span></li>
                         <li data-zone="Asia/Kuala_Lumpur"><span class="dot" aria-hidden="true"></span><span class="city">Kuala Lumpur</span><time>--:--</time><span class="sr"></span></li>
                     </ul>
@@ -491,52 +701,129 @@
             </div>
         </div>
 
-        <!-- SECÇÃO DO LIVRO COMENTADA (não visível no site)
-        <section class="book" id="book">
+        <!-- Flagship Book Presentation -->
+        <section class="book-section" id="book">
             <div class="wrap">
-                <div class="book-card book-grid">
-                    <div>
-                        <span class="status">In preparation</span>
-                        <h2>Cross-Border Operational Excellence</h2>
-                        <p class="subtitle">Scaling &amp; Governing Multi-Region Delivery</p>
-                        <div class="actions">
-                            <a class="btn btn-primary" href="#contact" data-mail data-subject="Notify me about the book">Email me to be notified</a>
+                <div class="book-hero-card">
+                    <div class="book-top-grid">
+                        <!-- Book Cover: carrega assets/images/book-cover.jpg; se ainda não existir, mostra a capa tipográfica limpa -->
+                        <div class="book-cover-wrap" id="book-cover-wrap">
+                            <img class="book-cover-img" src="assets/images/book-cover.jpg" alt="Cover of Delivering Across Borders by Hugo Abreu" width="560" height="840"
+                                 onerror="document.getElementById('book-cover-wrap').classList.add('use-fallback')">
+                            <div class="book-cover-fallback" aria-hidden="true">
+                                <div>
+                                    <div class="cover-bar"></div>
+                                    <div class="cover-title">Delivering Across Borders</div>
+                                    <div class="cover-subtitle">A Practical Guide to Building and Running Delivery Teams in Several Countries</div>
+                                </div>
+                                <div class="cover-author">Hugo Abreu</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="eyebrow">The Book</span>
+                            <h2>Delivering Across Borders</h2>
+                            <p class="book-subtitle">A Practical Guide to Building and Running Delivery Teams in Several Countries</p>
+                            <p class="book-thesis">Cross-border delivery usually fails when headquarters and the local team stop understanding each other, and nobody notices until a client does.</p>
+                            <p>This book condenses fifteen years of field notes into a practical manual for running distributed teams. It stays close to real accounts, hard trade-offs, and mistakes I paid for: choosing a country with data, protecting margins across currencies, handling scope growth, recovering troubled accounts, and governing AI-assisted engineering teams.</p>
+
+                            <ul class="spec-pills">
+                                <li>10 Practical Chapters</li>
+                                <li>Chapter Checklists</li>
+                                <li>4 Ready-to-Use Templates</li>
+                                <li>Zero Consulting Jargon</li>
+                            </ul>
+
+                            <!-- AMAZON CTA PRINCIPAL (descomentar quando o livro estiver live na Amazon; usar Books2Read para redirecionar por país):
+                            <div class="actions">
+                                <a class="btn btn-primary" href="https://books2read.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">Get it on Amazon (Paperback &amp; Kindle)</a>
+                            </div>
+                            -->
                         </div>
                     </div>
 
-                    <div class="book-intro">
-                        <p>When a timeline is slipping and you are in a room halfway across the world, theory rarely helps. This book is what I wish I had been handed before my first flight: a practical field manual for people who run delivery across borders.</p>
-                        <p>It is written for delivery managers, engineering leads and founders scaling international teams. It draws on real projects, from opening markets to recovering troubled accounts, and every chapter ends with a short list of checks you can use the next day.</p>
+                    <!-- The Three Pillars -->
+                    <div class="pillars-grid">
+                        <div class="pillar-card">
+                            <div class="pillar-label">Pillar 01 &middot; Culture</div>
+                            <h4>Spot misalignment early</h4>
+                            <p>Read quiet signals across time zones, catch blame before it turns into turnover, and adapt to local working rhythms without losing standards.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-label">Pillar 02 &middot; Knowledge</div>
+                            <h4>Kill information silos</h4>
+                            <p>Structure short daily overlap windows, Architecture Decision Records, and clear handovers so remote teams stop guessing while headquarters sleeps.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-label">Pillar 03 &middot; Process</div>
+                            <h4>Make governance hold under pressure</h4>
+                            <p>Close the gap between written rules and panic responses with clear ownership, written business sign-offs, blameless post-mortems, and steady crisis routines.</p>
+                        </div>
+                    </div>
+                </div>
 
-                        <h3>What it covers</h3>
-                        <ul class="covers">
-                            <li>Why local pushback is useful information and not rebellion.</li>
-                            <li>Going from a blank map to a working local office, with a weighted country selection matrix and turnkey partners.</li>
-                            <li>Practical P&amp;L governance, and a seven-step process for recovering a failing account.</li>
-                            <li>Managing expectations and communicating early, so surprises stay small.</li>
-                            <li>Keeping client contracts simple while putting safeguards in place before you need them.</li>
-                            <li>Scaling headcount without losing quality, starting from a shared definition of success with the client.</li>
-                            <li>Mapping stakeholders and aligning technical teams with business owners around clear priorities.</li>
-                            <li>Adapting to local working rhythms instead of forcing your defaults.</li>
-                            <li>Handling a crisis with quiet documentation and steady communication routines, not last-minute heroics.</li>
-                            <li>Turning a vendor relationship into a long-term partnership by working as part of the client team.</li>
-                        </ul>
+                <!-- Table of Contents (Chapter Titles Only) -->
+                <div class="subsection" id="chapters">
+                    <div class="subsection-head">
+                        <h3>Inside the book</h3>
+                        <p>Ten chapters covering the full lifecycle of a cross-border operation, from picking a country to scaling teams, stabilizing crises, and retaining accounts.</p>
+                    </div>
+
+                    <ol class="chapters-grid">
+                        <li><span class="chap-num">01</span><span class="chap-title">The Anatomy of a Cross-Border Operation</span></li>
+                        <li><span class="chap-num">02</span><span class="chap-title">From Study to Office, Choosing and Opening a Country</span></li>
+                        <li><span class="chap-num">03</span><span class="chap-title">Margin Retention, Where Money Leaks</span></li>
+                        <li><span class="chap-num">04</span><span class="chap-title">Zero-Surprise Delivery</span></li>
+                        <li><span class="chap-num">05</span><span class="chap-title">Contracts and Client Steering, Kept Simple</span></li>
+                        <li><span class="chap-num">06</span><span class="chap-title">Scaling Fast Without Breaking Quality</span></li>
+                        <li><span class="chap-num">07</span><span class="chap-title">The Stakeholder Web</span></li>
+                        <li><span class="chap-num">08</span><span class="chap-title">Cultural Intelligence for Delivery Leaders</span></li>
+                        <li><span class="chap-num">09</span><span class="chap-title">Crisis Governance, Post-Mortems, and Vendor Risk</span></li>
+                        <li><span class="chap-num">10</span><span class="chap-title">Retention, Expansion, and What Comes Next</span></li>
+                    </ol>
+
+                    <div class="extras-bar">
+                        <strong>Included toolkits &amp; appendices:</strong> Epilogue, consolidated chapter Core Points checklists, operational Glossary, and four practical templates (Weighted Country Selection Matrix, Peak Capacity Request, UAT Framework, and Root Cause Analysis Template).
+                    </div>
+                </div>
+
+                <!-- Who It Is For -->
+                <div class="subsection">
+                    <div class="subsection-head">
+                        <h3>Who this book is for</h3>
+                        <p>Written as a direct, practical manual you can use on Monday morning, whether you already own the P&amp;L or are heading toward that seat.</p>
+                    </div>
+
+                    <div class="audience-grid">
+                        <div class="audience-card">
+                            <h4>Delivery Managers &amp; Engineering Leads</h4>
+                            <p>Concrete habits for managing scope trade-offs, estimating honestly, running remote technical interviews, and keeping stakeholders aligned across time zones.</p>
+                        </div>
+                        <div class="audience-card">
+                            <h4>Founders &amp; Managers Expanding Abroad</h4>
+                            <p>How to evaluate countries objectively, use turnkey partners to land fast, set clear boundaries between HQ and local teams, and protect margins.</p>
+                        </div>
+                        <div class="audience-card">
+                            <h4>Account, Program &amp; Recruiting Peers</h4>
+                            <p>The operational view from the delivery desk: how contracts shape daily risk, how to define seniority before searching, and how to save a troubled account.</p>
+                        </div>
+                        <div class="audience-card">
+                            <h4>Management Students</h4>
+                            <p>An honest look at international delivery beyond textbooks, including practical advice on how to position yourself for your first assignment abroad.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        -->
 
+        <!-- Contact -->
         <section class="contact" id="contact">
             <div class="wrap">
                 <div class="contact-card">
                     <h2>Contact</h2>
-                    <p>Questions about cross-border delivery? Send me an email.</p>
-                    <!-- Texto alternativo com menção ao livro (comentado):
-                    <p>Questions about cross-border delivery or about the book? Send me an email.</p>
-                    -->
+                    <p>Questions about cross-border delivery, speaking, or the book? Send me an email or reach out on LinkedIn.</p>
                     <div class="actions">
-                        <a class="btn btn-primary" href="#contact" data-mail>Send an email</a>
+                        <a class="btn btn-primary" href="#contact" data-mail data-subject="Delivering Across Borders">Send an email</a>
                         <a class="btn btn-quiet" href="https://www.linkedin.com/in/hugoabreu7" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                     <noscript><p style="margin-top:16px">The email link needs JavaScript. You can reach me on LinkedIn instead.</p></noscript>
@@ -546,7 +833,10 @@
     </main>
 
     <footer>
-        <div class="wrap">&copy; <span id="year">2026</span> Hugo Abreu</div>
+        <div class="wrap">
+            <span>&copy; <span id="year">2026</span> Hugo Abreu</span>
+            <span>Lisbon, Portugal</span>
+        </div>
     </footer>
 
     <script>
@@ -564,7 +854,7 @@
             });
         });
 
-        // Local time strip. A filled dot means 09:00 to 18:00 local time.
+        // Local time strip. A filled green dot means 09:00 to 18:00 local time.
         (function () {
             var wrap = document.getElementById('clocks-wrap');
             var items = document.querySelectorAll('#clocks li');
